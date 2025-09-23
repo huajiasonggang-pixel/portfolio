@@ -556,6 +556,16 @@ from {
 
 
 @media (max-width:600px){
+	.fade-in-element {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+.fade-in-element.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 	
 	.about-img2 {
 	width: 50%;
@@ -843,4 +853,5 @@ margin-bottom: 200px;
 	padding-bottom: 20px;
 }
 	
+
 }
