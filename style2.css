@@ -1,0 +1,846 @@
+@charset "utf-8";
+/* 共通部分 */
+html {
+	font-size: 100%;
+}
+
+
+p{
+	font-size: 1.1rem;
+	line-height: 2rem;
+	font-family: "Noto Sans JP", sans-serif;
+  font-style: normal;
+	color: #562500;
+}
+
+a{
+	text-decoration: none;
+	color: #562500;
+	font-weight: Medium;
+	
+}
+
+
+
+img{
+	max-width: 100%;
+
+}
+
+
+
+html {
+  height: 100%;
+}
+
+body {
+		
+  font-family: "Noto Sans JP", sans-serif;
+  font-style: normal;
+	color: #562500;
+	  padding-top: 60px; /* ヘッダーの後ろに要素が隠れないようにするため */
+	
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+	
+
+}
+ul{
+  padding-left:0;
+}
+
+li{
+  list-style:none;
+}
+
+header {
+	  position: fixed; /*← fixedで固定 */
+    width: 100%; 
+    height: 60px; 
+    background: #fff; 
+    padding: 20px 60px; 
+    box-sizing: border-box;
+    top: 0; 
+    left: 0; 
+    display: flex; 
+    align-items: center; 
+	/* ロゴとメニューを横並びにする */
+    justify-content:space-between;
+	z-index: 30;
+}
+
+header .nav .menu {
+    display: flex; 
+}
+
+header .nav .menu li {
+    list-style: none; 
+    margin-left: 40px;
+}
+
+header .nav .menu li a{
+   color: #C54D1C;
+   font-weight:bold;
+   text-decoration: none;
+   font-size: 20px;
+}
+header .nav .menu li :hover{
+	color: #562500;
+}
+
+/*モバイル*/
+@media (max-width:600px){
+	
+	p{
+	font-size: 8px;
+	line-height: 15px;
+	font-family: "Noto Sans JP", sans-serif;
+  font-style: normal;
+	color: #562500;
+		margin-bottom: 10px;
+}
+
+	
+	
+	header {
+	  position: fixed; /*← fixedで固定 */
+    width: 100%; 
+    height: 30px; 
+    background: #fff; 
+    padding: 20px 60px; 
+    box-sizing: border-box;
+    top: 0; 
+    left: 0; 
+    display: flex; 
+    align-items: center; 
+	/* ロゴとメニューを横並びにする */
+    justify-content:space-between;
+	z-index: 30;
+}
+	header .logo{
+		width: 50%;
+		margin-top: 18px;
+	}
+
+header .nav .menu {
+    display: flex; 
+}
+
+header .nav .menu li {
+    list-style: none; 
+    margin-left: 10px;
+}
+
+header .nav .menu li a{
+   color: #C54D1C;
+   font-weight:bold;
+   text-decoration: none;
+   font-size: 10px;
+}
+header .nav .menu li :hover{
+	color: #562500;
+}
+	
+nav {
+	padding-bottom: 8px;	
+	}
+	
+		
+	}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.logo {
+	width: 210px;
+	margin-top: 25px;
+}
+
+
+.main-nav {
+	font-size: 1.25rem;
+	text-transform: uppercase;
+	margin-top: 14px;
+	list-style: none;
+	font-weight: Medium;
+}
+
+.main-nav li {
+	margin-left: 36px;
+	
+}
+
+.main-nav a {
+	color: #c54d1c;
+}
+
+.main-nav a:hover {
+	color: #562500;
+}
+
+.page-header {
+	display: flex;
+	justify-content: space-between;
+	}
+
+
+	
+.wrapper {
+	margin: 0 auto;
+	padding: 0 5%;
+}
+
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeOut 1.5s 2.5s forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.loading__logo {
+  opacity: 0;
+  animation: logo_fade 2s 1s forwards;
+  width: 30%;
+}
+
+
+
+@keyframes logo_fade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 150px;
+	margin-top: 50px;
+}
+
+.sait {
+	padding: 0 1.5em;
+    margin-bottom: 5rem;
+	
+}
+
+.shirt img {
+	width: 60%;
+	margin-top: 80px;
+}
+
+/*モバイル*/
+@media (max-width:600px) {
+	.sait {
+	padding: 0 1.5em;
+    margin-bottom: 2rem;
+	
+}
+	.loading__logo {
+  opacity: 0;
+  animation: logo_fade 2s 1s forwards;
+  width: 50%;
+}
+}
+
+.works {
+	margin-top: 30px;
+	width: 25%;
+}
+
+.works-img {
+   vertical-align: bottom;
+   padding-bottom: 0;
+}
+
+.intrduce {
+	 position: relative;/*相対配置*/
+	margin-top: 20px;
+}
+
+/*モバイル*/
+@media (max-width:600px){
+	.intrduce {
+	 position: relative;/*相対配置*/
+	margin-top: 1rem;
+}
+
+	.grid {
+	margin: 0 auto;
+		width:100%;
+}
+	
+}
+
+.works-word{
+	font-size: 1.5rem;
+	position: absolute;/*絶対配置*/
+  color: #562500;/*文字は白に*/
+	top: 373px;
+	margin-bottom: 10px;
+}
+
+.works-word2{
+	font-size: 1.5rem;
+	position: absolute;/*絶対配置*/
+  color: #562500;/*文字は白に*/
+	top: 850px;
+	margin-bottom: 10px;
+}
+
+.works-word3{
+	font-size: 1.5rem;
+	position: absolute;/*絶対配置*/
+  color: #562500;/*文字は白に*/
+	top: 1320px;
+	margin-bottom: 10px;
+}
+
+.works-main {
+	background-image: url("../1x/haike.png");
+	background-repeat: repeat;
+	width: auto;
+	height: auto;
+	margin-top: 50px;
+}
+
+
+
+/*モバイル*/
+@media (max-width:600px){
+	.works {
+	width: 50%;
+		margin-top: 10px;
+		
+}
+	
+.works-main {
+	background-image: url("../1x/haike.png");
+	background-repeat: repeat;
+	width: auto;
+	height: auto;
+	margin-top: 10px;
+}
+	
+	
+}
+
+.about {
+	 text-align:center;
+	margin-left: auto;
+  margin-right: auto;
+}
+
+.about-img {
+	
+	width: 30%;
+	margin-top: 50px;
+}
+
+
+.more-look{
+	margin-top: 50px;
+	width: 10%;
+}
+
+.decration {
+	display: flex;
+	margin: 70px 0;
+
+}
+
+.decration li {
+	padding: 0.5em;
+}
+
+.contact {
+	text-align: center;
+}
+
+.contact img{
+	width: 35%;
+} 
+
+.contact-email {
+	padding-bottom: 60px;
+}
+
+
+/*流れるアニメーション*/
+	@keyframes infinity-scroll-left {
+from {
+  transform: translateX(0);
+}
+  to {
+  transform: translateX(-100%);
+}
+}
+.scroll-infinity__wrap {
+  display: flex;
+  overflow: hidden;
+}
+.scroll-infinity__list {
+  display: flex;
+  list-style: none;
+  padding: 0
+}
+.scroll-infinity__list--left {
+  animation: infinity-scroll-left 80s infinite linear 0.5s both;
+}
+.scroll-infinity__item {
+  width: calc(150vw / 6);
+}
+.scroll-infinity__item>img {
+  width: 100%;
+}
+
+
+
+@media (max-width:600px){
+	
+	.about-img {
+	
+	width: 60%;
+		margin-top: 30px;
+			
+		}
+	.scroll-infinity__item{
+		width:200px;
+	}
+	.decration {
+	display: flex;
+	margin: 20px 0;
+
+}
+	.more-look{
+	margin-top: 10px;
+	width: 30%;
+}
+	
+	.slide-animation li {
+    width: 200px;
+}
+	
+.contact img{
+	width: 55%;
+} 
+	.thanks {
+		margin-top: 10px;
+	}
+	.contact-email {
+	padding-bottom: 30px;
+}
+
+}
+
+
+.scroll-up {
+  opacity: 0; 
+  visibility: hidden;
+  transform: translateY(50px);
+  transition: all 1s;
+}
+.scroll-up.is-show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+
+.fade-in-element {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+.fade-in-element.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#copyright {
+	text-align: center;
+}
+
+/*aboutコード*/
+.works-about {
+	margin-top: 30px;
+	width: 25%;
+	margin-left: 20px;
+	
+}
+.skill {
+	margin: 80px 0 50px 20px;
+	width: 30%;
+}
+
+.skill-introduce {
+	text-align: center;
+}
+
+.web-img {
+	padding-right: 60px;
+}
+
+.about-img2 {
+	width: 25%;
+	margin-top: 50px;
+}
+
+#web {
+	margin-bottom: 80px;
+}
+
+#websait {
+	margin-bottom: 80px;
+}
+
+
+.websait-img {
+	padding-left: 30px;
+}
+
+.websait-p {
+	padding-left: 60px;
+}
+.point {
+	text-align: center;
+}
+
+.honest{
+	margin-bottom: 80px;
+}
+
+.powerofaction {
+	margin-bottom: 120px;
+}
+
+
+
+
+
+@media (max-width:600px){
+	
+	.about-img2 {
+	width: 50%;
+	margin-top: 20px;
+}
+	
+	.works-about {
+	width: 50%;
+		margin-top: 10px;
+		margin-left: 0;
+		
+}
+	
+	.about p {
+		margin-bottom: 50px;
+		font-size: 9px;
+	}
+
+.skill {
+	margin: 10px 0 0 0;
+	width: 60%;
+}
+	
+	.web-img {
+		padding: 30px 0 20px ;
+		width: 50%;
+}
+	
+	
+	.web-p {
+		padding-left: 0;
+	width: 70%;
+	}
+	
+.websait-p {
+	padding-left: 0;
+	width: 70%;
+	padding-bottom: 30px;
+}	
+	
+	.websait-img {
+	padding: 30px 0 20px ;
+		width: 50%;
+}
+	
+#web {
+	margin-bottom: 0;
+}
+
+#websait {
+	margin-bottom: 0;
+}
+	
+.honest{
+	margin-bottom: 20px;
+	margin-top: 20px;
+	width: 95%;
+}	
+	
+.powerofaction {
+	margin-bottom: 60px;
+	width: 95%;
+}
+	
+}
+
+
+/*shirtサイト*/
+.shirt {
+	text-align: center;
+}
+
+.shirt-main {
+	font-size: 35px;
+}
+.fictitious img{
+	vertical-align: bottom;
+	width: 20%;	
+	padding-bottom: 3px;
+	padding-top: 40px;
+	}
+.explanation {
+	padding: 0 350px;
+}
+.explanation h1 {
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+
+.explanation h2{
+	border-bottom: 1px solid #562500;
+	width: 150px;
+	padding-bottom: 5px;
+}
+
+.explanation p{ 
+padding-top: 5px;
+	width: 100%;
+	padding-bottom: 30px;
+	padding-bottom: 20px;
+	line-height: 28px;
+	}
+
+.img {
+padding-top: 50px;	
+	margin-bottom: 80px;
+}
+
+.fictitious {
+	width: 40%;
+	padding-top: 50px;
+}
+
+@media (max-width:600px){
+	
+	.explanation {
+	padding: 0 ;
+}
+.shirt img {
+	width: 90%;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}	
+
+.fictitious {
+	width: 40%;
+	padding-top: 20px;
+	padding-bottom: 1px;
+}
+	
+.fictitious img{
+	vertical-align: bottom;
+	width: 50%;	
+	padding-bottom: 3px;
+	padding-top: 0;
+	padding-left: 20px;
+	}
+	
+.explanation h1 {
+	padding-bottom: 0;
+	padding-top: 0;
+	font-size: 20px;
+	padding-left: 20px;
+}	
+	
+.explanation p{ 
+padding-top: 0;
+	width: 100%;
+	padding: 5px 20px 10px 20px;
+	line-height: 15px;
+	font-size: 9px;
+	}
+
+	
+.explanation h2{
+	border-bottom: 1px solid #562500;
+	width: 80px;
+	padding-bottom: 5px;
+	margin-left: 20px;
+	font-size: 15px;
+}
+	
+	.img {
+		width: 80%;
+		padding-top: 30px;
+		margin-bottom: 30px;
+	
+	}
+	.design-img {
+		text-align: center;
+	}
+	
+
+}
+
+/*KIDSサイト*/
+
+.kids-img {
+padding-top: 50px;	
+vertical-align:top;
+width: 90%;
+}
+
+.kids-img1 {
+vertical-align:top;
+	margin-bottom: 200px;
+	width: 90%;
+}
+
+@media (max-width:600px) {
+	.kids-img1 {
+	margin-bottom: 50px;
+		width: 80%;
+}
+	
+.kids-img {
+padding-top: 10px;	
+vertical-align:top;
+width: 80%;
+}
+}
+
+/*WOMENサイト*/
+
+.women-img {
+padding-top: 50px;	
+width: 90%;
+margin-bottom: 200px;
+}
+
+
+
+@media (max-width:600px) {
+	.women-img {
+	margin-bottom: 50px;
+		width: 80%;
+}
+		
+	}
+
+/*bunerサイト*/
+.buner1 img {
+	width: 35%;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+.buner1  {
+	text-align: center;
+}
+
+.buner1-point h2 {
+	font-size: 25px;
+	border-bottom: 1px solid #562500;
+	width: 350px;
+}
+
+.buner1-point {
+	padding: 0 30%;
+	margin-bottom: 50px;
+}
+
+.buner1-point p{
+	font-size: 18px;
+	padding-top: 10px;
+	line-height: 25px;
+}
+.buner-point {
+	width: 30%;
+	padding-top: 30px;
+}
+.name {
+	padding-bottom: 80px;
+}
+
+@media (max-width:600px) {
+	.buner1 img {
+	width: 75%;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+	
+.buner1-point {
+	padding: 0 10%;
+	margin-bottom: 40px;
+}
+	
+.buner1-point h2 {
+	font-size: 16px;
+	border-bottom: 1px solid #562500;
+	width: 150px;
+}
+	
+.buner1-point p{
+	font-size: 14px;
+	padding-top: 10px;
+	line-height: 20px;
+}
+	
+.buner-point {
+	width: 50%;
+	padding-top: 10px;
+}
+	
+.name {
+	padding-bottom: 20px;
+}
+	
+}
