@@ -270,6 +270,7 @@ nav {
 @media (max-width:600px) {
 	.shirt-img {
 		width: 90%;
+		padding-right: 30px;
 	}
 	.sait {
 	padding: 0 1.5em;
@@ -871,6 +872,7 @@ margin-bottom: 200px;
 	
 
 }
+
 
 
 
