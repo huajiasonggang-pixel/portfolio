@@ -269,7 +269,7 @@ nav {
 /*モバイル*/
 @media (max-width:600px) {
 	.shirt-img {
-		width: 95%;
+		width: 90%;
 		padding-left: 15px;
 		 margin-bottom: 2rem;
 	}
@@ -873,6 +873,7 @@ margin-bottom: 200px;
 	
 
 }
+
 
 
 
