@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>portfolio</title>
+<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/huajiasonggang-pixel/portfolio/refs/heads/main/favicon.ico">
+　<meta name="description" content="松岡華佳のポートフォーリオ">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Shippori+Mincho&family=Shippori+Mincho+B1&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+	
+<!--CSS-->
+	<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link href="style2.css" rel="stylesheet">
+	
+	     
+</head>
+	
+<body>
+			
+	<header class="page-header wrapper">
+<h1><a href="index.html"><img class="logo" src="https://github.com/huajiasonggang-pixel/portfolio/blob/main/%E3%82%A2%E3%82%BB%E3%83%83%E3%83%88%2082.png?raw=true" alt="松岡華佳のポートフォーリオ"></a>
+		</h1>
+		<nav class="nav">
+		<ul class="menu">
+			<li><a href="index.html">WORKS</a></li>
+			<li><a href="about.html">ABOUT</a></li>
+			<li><a href="#contact">CONTACT</a></li>
+			</ul>
+		</nav>
+		</header>
+	<main>
+		<section class="wrapper works-main" >
+			<div class="shirt fade-in-element">
+			<img src="https://github.com/huajiasonggang-pixel/portfolio/blob/main/%E3%82%A2%E3%82%BB%E3%83%83%E3%83%88%2038.png?raw=true" alt="熊本観光紹介サイト">
+			</div>
+			<div>
+			<div class="explanation">
+				<div class="fictitious">
+			<img src="https://github.com/huajiasonggang-pixel/portfolio/blob/main/kakuu_1.png?raw=true" alt="架空デザイン">
+				</div>
+				<h1 class="shirt-main">
+				熊本観光紹介サイト
+				</h1>
+				<p>
+				熊本の自然や温かさを伝えることを意識し、緑やベージュを基調としました。<br>エリアごとに情報を整理し直感的に分かるようレイアウトを工夫しています。<br>メイン画像には熊本の雄大な風景写真を大きく配置し、印象づける構成にしています。<br>フォントや写真のトーンを統一することで上品で清潔感のあるデザインに仕上げています。
+
+
+
+
+				</p>
+				
+				</div>
+				
+				<div class="explanation">
+				
+				<h2>
+				目的
+				</h2>
+				<p>
+				・熊本の魅力を伝え、興味をもってもらう。また、熊本の観光客を増やす。
+				</p>
+				
+				</div>
+				<div class="explanation">
+				
+				<h2>
+				ターゲット
+				</h2>
+				<p>
+				・20代後半～の旅行好きな人<br>・熊本観光に興味がある人<br>
+				</p>
+				<div class="design-img">
+					<img class="women-img fade-in-element" src="https://github.com/huajiasonggang-pixel/portfolio/blob/main/%E7%86%8A%E6%9C%AC%E7%B4%B9%E4%BB%8B.jpg?raw=true" alt="">
+					</div>
+				</div>
+				
+			
+			</div>
+			
+		
+	
+		<footer>
+			
+		<div id="contact">
+			<ul class="contact fade-in-element">
+				<li>
+			<img class="thanks" src="https://github.com/huajiasonggang-pixel/portfolio/blob/main/thanks.png?raw=true" alt="ご覧いただきありがとうございます">
+					</li>
+				
+				<li>
+			<img class="contact-email" src="https://github.com/huajiasonggang-pixel/portfolio/blob/main/%E3%82%A2%E3%82%BB%E3%83%83%E3%83%88%2091.png?raw=true" alt="contact">
+					</li>
+			</ul>
+			<p id="copyright"><small>
+				&copy;2025 matsuoka haruka portfolio.
+				</small>
+			
+			</p>
+			</div>
+		</footer>
+			
+		<script src="fadein.js"></script>
+			</section>
+		
+		
+	</main>
+	
+		
+</body>
+</html>
+
+
+
+
+
